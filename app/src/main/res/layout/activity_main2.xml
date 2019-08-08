@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEECEC"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/nav_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_nav" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Your Flight"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cir_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/girl_music" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_rel"
+            android:background="@drawable/toolbar_bottom_design"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            app:tabSelectedTextColor="#3F51B5"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="#fff">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="One Way" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roundtrip" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multi-city" />
+
+        </android.support.design.widget.TabLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tablayout"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/dotted_outline">
+
+            <RelativeLayout
+                android:id="@+id/all_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/from_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp">
+
+                    <TextView
+                        android:id="@+id/from_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FROM" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/from_tv"
+                        android:paddingRight="50dp"
+                        android:text="Delhi"
+                        android:textColor="#3F51B5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/to_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/from_rel"
+                    android:padding="30dp">
+
+                    <TextView
+                        android:id="@+id/to_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TO" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/to_tv"
+                        android:paddingRight="50dp"
+                        android:text="Mumbai"
+                        android:textColor="#3F51B5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/departure_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/from_rel"
+                    android:paddingHorizontal="30dp"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/departure_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEPARTURE" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/departure_tv"
+                        android:paddingRight="30dp"
+                        android:text="15 July,2019"
+                        android:textColor="#3F51B5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/adults_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/departure_rel"
+                    android:paddingHorizontal="30dp"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/adults_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADULTS" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/adults_tv"
+                        android:drawableRight="@drawable/ic_arrow_drop_down"
+                        android:paddingRight="30dp"
+                        android:text="2"
+                        android:textColor="#3F51B5" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/child_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/departure_rel"
+                    android:layout_toRightOf="@id/from_rel"
+                    android:paddingHorizontal="30dp"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/child_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADULTS" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/child_tv"
+                        android:drawableRight="@drawable/ic_arrow_drop_down"
+                        android:paddingRight="30dp"
+                        android:text="0"
+                        android:textColor="#3F51B5" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/economy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_rel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/text_back"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp"
+                android:text="ECONOMY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_rel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_toRightOf="@id/economy_tv"
+                android:background="@drawable/text_back_color"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp"
+                android:text="BUSINESS"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/middle_rel"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/text_back_color"
+            android:paddingVertical="15dp"
+            android:text="Search Flight"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_btn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Journey with Flight!!"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEECEC"
+    tools:context=".Main3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_Relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_bottom_design"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/top_First_Rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Result"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/desti_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_First_Rel"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/delhiTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delhi"
+                    android:textColor="#fff"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_toLeftOf="@id/mumbaiTv"
+                    android:layout_toRightOf="@id/delhiTv"
+                    android:background="@drawable/dotted_outline_white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_flight" />
+
+                <TextView
+                    android:id="@+id/mumbaiTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Mumbai"
+                    android:textColor="#fff"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desti_rel"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/business_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/one_way_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@id/business_text"
+                    android:text="One Way"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/one_way_text"
+                    android:text="08th Aug, 2019"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/avail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_Relative"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Available 13 Flights"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_Relative"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_filter_list" />
+
+        <RelativeLayout
+            android:id="@+id/one_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avail_tv"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/dotted_outline">
+
+                <RelativeLayout
+                    android:id="@+id/mid_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration: \n4hr 20min"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=" Stops:\n2 Stops"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="  ₹\n1150"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mid_rel"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:id="@+id/time_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:15"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:layout_toRightOf="@id/time_one"
+                        android:background="@drawable/dotted_line_blue" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_flight_black" />
+
+                    <TextView
+                        android:id="@+id/time_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:text="05:35"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/text_back_color"
+                android:paddingVertical="15dp"
+                android:text="Book Flight"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/one_rel"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/dotted_outline">
+
+                <RelativeLayout
+                    android:id="@+id/mid_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration: \n4hr 20min"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=" Stops:\n2 Stops"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="  ₹\n1150"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mid_rel"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:id="@+id/time_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:15"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:layout_toRightOf="@id/time_one"
+                        android:background="@drawable/dotted_line_blue" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_flight_black" />
+
+                    <TextView
+                        android:id="@+id/time_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:text="05:35"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/text_back_color"
+                android:paddingVertical="15dp"
+                android:text="Book Flight"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/two_rel"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/dotted_outline">
+
+                <RelativeLayout
+                    android:id="@+id/mid_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration: \n4hr 20min"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=" Stops:\n2 Stops"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="  ₹\n1150"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mid_rel"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:id="@+id/time_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:15"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:layout_toRightOf="@id/time_one"
+                        android:background="@drawable/dotted_line_blue" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_flight_black" />
+
+                    <TextView
+                        android:id="@+id/time_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:text="05:35"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/text_back_color"
+                android:paddingVertical="15dp"
+                android:text="Book Flight"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/four_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/three_rel"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/dotted_outline">
+
+                <RelativeLayout
+                    android:id="@+id/mid_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration: \n4hr 20min"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=" Stops:\n2 Stops"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="  ₹\n1150"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mid_rel"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:id="@+id/time_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:15"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:layout_toRightOf="@id/time_one"
+                        android:background="@drawable/dotted_line_blue" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_flight_black" />
+
+                    <TextView
+                        android:id="@+id/time_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toLeftOf="@id/time_two"
+                        android:text="05:35"
+                        android:textColor="#3F51B5"
+                        android:textSize="25dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/text_back_color"
+                android:paddingVertical="15dp"
+                android:text="Book Flight"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
